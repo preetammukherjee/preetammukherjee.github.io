@@ -2,134 +2,166 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Preetam Mukherjee - Academic Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. Preetam Mukherjee | Digital University Kerala</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      background-color: #003366;
+    }
+    .navbar a {
+      color: #fff !important;
+      font-weight: 500;
     }
     header {
-      background: #1a73e8;
-      color: white;
-      padding: 20px 10px;
+      background-color: #f8f9fa;
+      padding: 60px 0;
       text-align: center;
     }
     header img {
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
-      border: 3px solid white;
-      margin-bottom: 15px;
-    }
-    header h1 {
-      margin: 10px 0 5px;
-    }
-    header p {
-      font-size: 1.1em;
-    }
-    nav {
-      background: #333;
-      color: white;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 10px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
+      margin-bottom: 20px;
+      border: 3px solid #003366;
     }
     section {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
+      padding: 60px 0;
     }
-    section h2 {
-      color: #1a73e8;
-      margin-bottom: 20px;
+    h2 {
+      color: #003366;
+      margin-bottom: 25px;
     }
     footer {
-      background: #333;
-      color: white;
+      background-color: #003366;
+      color: #fff;
       text-align: center;
-      padding: 15px;
-      margin-top: 20px;
+      padding: 15px 0;
     }
-    ul {
-      list-style: square;
-      padding-left: 20px;
-    }
-    .links a {
-      display: inline-block;
-      margin: 5px 10px;
-      padding: 8px 15px;
-      border-radius: 5px;
-      background: #1a73e8;
-      color: white;
+    a.link {
+      color: #003366;
       text-decoration: none;
     }
-    .links a:hover {
-      background: #1558b0;
+    a.link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="your-photo.jpg" alt="Your Photo">
-    <h1>Preetam Mukherjee</h1>
-    <p>Researcher | Cybersecurity</p>
-  </header>
-
-  <nav>
-    <a href="#affiliations">Organizations</a>
-    <a href="#papers">Pulications</a>
-    <a href="#projects">Funded Projects</a>
-    <a href="#links">Profiles</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Dr. Preetam Mukherjee</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#background">Background</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <section id="affiliations">
-    <h2>Affiliations</h2>
-    <p>Currently affiliated with <b>Digital University Kerala</b>.  
-       Previous associations include <b>KTH, IIT KGP, Jadavpur University</b>.</p>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <img src="profile.jpg" alt="Dr. Preetam Mukherjee">
+      <h1>Dr. Preetam Mukherjee</h1>
+      <h5>Assistant Professor & Chair, Digital University Kerala</h5>
+    </div>
+  </header>
+
+  <!-- Background Section -->
+  <section id="background">
+    <div class="container">
+      <h2>Background</h2>
+      <p>
+        Dr. Preetam Mukherjee is an Assistant Professor in the School of Computer Science and Engineering (SoCSE), Kerala University of Digital Sciences, Innovation and Technology (formerly IIITM-K), Trivandrum, Kerala, India. Prior to joining DUK, he was with the Division of Network and Systems Engineering (NSE), School of EECS, KTH Royal Institute of Technology, Stockholm, Sweden, where he worked as a Post-Doctoral Researcher. 
+      </p>
+      <p>
+        He worked as a Sr. Software Engineer in IIT Kharagpur, India, and as a Sr. Research Engineer in the Centre for Distributed Computing in Jadavpur University, Kolkata, India. He received his Ph.D. and Master of Engineering from the Department of Computer Science & Engineering, Jadavpur University, in 2020 and 2011 respectively. His B.Tech degree is in Computer Science & Engineering from the West Bengal University of Technology, Kolkata, India.
+      </p>
+    </div>
   </section>
 
-  <section id="papers">
-    <h2>Publications</h2>
-    <ul>
-      <li>“Paper Title 1” – Conference/Journal, Year</li>
-      <li>“Paper Title 2” – Conference/Journal, Year</li>
-      <li>“Paper Title 3” – Conference/Journal, Year</li>
-    </ul>
+  <!-- Projects Section -->
+  <section id="projects" class="bg-light">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="card shadow-sm mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Design and Development of Next Generation Automated Security Operations and Response Tool (ASPER)</h5>
+          <p class="card-text">
+            Funded by the Ministry of Electronics & Information Technology, Government of India (2025–2027), this project aims to build an advanced automated security operations and response tool to identify and mitigate vulnerabilities against sophisticated cyber threats.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2>Funded-Projects</h2>
-    <ul>
-      <li>Project 1 – Short description</li>
-      <li>Project 2 – Short description</li>
-      <li>Project 3 – Short description</li>
-    </ul>
+  <!-- Publications Section -->
+  <section id="publications">
+    <div class="container">
+      <h2>Selected Publications</h2>
+      <ul>
+        <li>
+          Mukherjee, P. & Mazumdar, C. (2019). 
+          “Security Concern as a Metric for Enterprise Business Processes.” 
+          <i>IEEE Systems Journal</i>, 13(4), 4015-4026.
+          <a href="https://new.duk.ac.in/personnel/preetam-mukherjee/" class="link" target="_blank">[Link]</a>
+        </li>
+        <li>
+          Mukherjee, P. & Mazumdar, C. (2018). 
+          “Attack Difficulty Metric for Assessment of Network Security.” 
+          In <i>Proceedings of the 13th International Conference on Availability, Reliability and Security (ARES ’18)</i>, Hamburg, Germany.
+          <a href="https://2018.ares-conference.eu/conference-2018/accepted-workshops-papers/" class="link" target="_blank">[Link]</a>
+        </li>
+        <li>
+          Mukherjee, P. & Mazumdar, C. (2015). 
+          “A Novel Model of Security Policies and Requirements.” 
+          In <i>Proceedings of the 1st International Conference on Information Systems Security and Privacy (ICISSP ’15)</i>, Angers, France, pp. 73-82.
+          <a href="https://www.scitepress.org/PublishedPapers/2015/52394/" class="link" target="_blank">[Link]</a>
+        </li>
+        <li>
+          Ekstedt, M., Afzal, Z., Mukherjee, P., Hacks, S., Lagerström, R. (2023). 
+          “Yet Another Cybersecurity Risk Assessment Framework.” 
+          <i>International Journal of Information Security</i>, 22(6), 1713-1729.
+          <a href="https://kth.diva-portal.org/smash/person.jsf?pid=authority-person%3A101622" class="link" target="_blank">[Link]</a>
+        </li>
+        <li>
+          Mukherjee, P. & Mazumdar, C. (2022). 
+          “Security Gap as a Metric for Enterprise Business Processes.” 
+          <i>Security and Privacy</i>, 5(6), e263.
+          <a href="https://ouci.dntb.gov.ua/en/works/4gwwjMq4/" class="link" target="_blank">[Link]</a>
+        </li>
+      </ul>
+      <p>For a complete list of publications, visit <a href="https://scholar.google.com/citations?user=fOSRHMUAAAAJ&hl=en" class="link" target="_blank">Google Scholar</a>.</p>
+    </div>
   </section>
 
-  <section id="Profiles" class="links">
-    <h2>Find Me Online</h2>
-    <a href="https://in.linkedin.com/in/preetam-mukherjee-4bb0ba165" target="_blank">LinkedIn</a>
-    <a href="https://scholar.google.com/citations?user=fOSRHMUAAAAJ&hl=en" target="_blank">Google Scholar</a>
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:preetam.mukherjee@duk.ac.in" class="link">preetam.mukherjee@duk.ac.in</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/preetam-mukherjee-4bb0ba165/" class="link" target="_blank">linkedin.com/in/preetam-mukherjee-4bb0ba165</a></p>
+      <p>ORCID: <a href="https://orcid.org/0000-0003-2549-6578" class="link" target="_blank">0000-0003-2549-6578</a></p>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Preetam Mukherjee</p>
+    <p>© 2025 Dr. Preetam Mukherjee | Digital University Kerala</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
