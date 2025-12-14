@@ -109,117 +109,110 @@
     </div>
   </header>
 
-  <!-- Background Section -->
-   <section id="background">
-    <div class="container">
-      <h2>Background</h2>
-  
-      <ul class="list-unstyled">
-        <li class="mb-3">
-          Dr. Preetam Mukherjee is an Assistant Professor in the School of Computer Science and Engineering at the Kerala University of Digital Sciences, Innovation and Technology (Digital University Kerala), formerly IIITM-K, Trivandrum, India.
-        </li>
-  
-        <li class="mb-3">
-          Prior to joining Digital University Kerala, he worked as a Post-Doctoral Researcher in the Division of Network and Systems Engineering, School of Electrical Engineering and Computer Science, KTH Royal Institute of Technology, Stockholm, Sweden.
-        </li>
-  
-        <li class="mb-3">
-          He has previously held research and engineering positions at IIT Kharagpur and at the Centre for Distributed Computing, Jadavpur University, Kolkata, India.
-        </li>
-  
-        <li class="mb-3">
-          He received his Ph.D. and Master of Engineering in Computer Science and Engineering from Jadavpur University, Kolkata, India.
-        </li>
-  
-        <li>
-          His research interests broadly span network and systems security, with a focus on attack modeling, network hardening, incident response, and security of emerging infrastructures such as 5G networks and smart grids.
-        </li>
+  <div class="container mt-5">
+  <!-- Tabs nav -->
+  <ul class="nav nav-tabs" id="profileTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="background-tab" data-bs-toggle="tab" data-bs-target="#background-tab-pane" type="button" role="tab">Background</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects-tab-pane" type="button" role="tab">Projects</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="publications-tab" data-bs-toggle="tab" data-bs-target="#publications-tab-pane" type="button" role="tab">Publications</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab">Contact</button>
+    </li>
+  </ul>
+
+  <!-- Tabs content -->
+  <div class="tab-content mt-4" id="profileTabsContent">
+    
+    <!-- Background Tab -->
+    <div class="tab-pane fade show active" id="background-tab-pane" role="tabpanel">
+      <div class="row align-items-center mb-4">
+        <div class="col-md-4 text-center text-md-start">
+          <img src="profile.jpg" alt="Dr. Preetam Mukherjee">
+        </div>
+        <div class="col-md-8 text-center text-md-start ps-md-1">
+          <h1 class="mb-2">Dr. Preetam Mukherjee</h1>
+          <h5 class="mb-1">Assistant Professor, School of Computer Science & Engineering</h5>
+          <h6 class="text-muted">Digital University Kerala</h6>
+        </div>
+      </div>
+
+      <!-- Background text -->
+      <ul class="list-unstyled mb-4">
+        <li class="mb-2">Assistant Professor at Digital University Kerala (formerly IIITM-K, Trivandrum, India).</li>
+        <li class="mb-2">Post-Doctoral Researcher at KTH Royal Institute of Technology, Stockholm, Sweden.</li>
+        <li class="mb-2">Previously at IIT Kharagpur and Centre for Distributed Computing, Jadavpur University.</li>
+        <li class="mb-2">Ph.D. and M.Eng. from Jadavpur University, Kolkata, India.</li>
+        <li>Research interests: attack modeling, network hardening, incident response, 5G and Smart Grid Security.</li>
       </ul>
-    </div>
-  </section>
 
-  <section class="mt-5">
-  <div class="container">
-    <h2 class="mb-4">Domains of Work</h2>
-
-    <div class="row g-3">
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card domain-card text-center shadow-sm">
-          <div class="card-body">
-            <i class="bi bi-diagram-3"></i>
-            <h5>Attack Modeling</h5>
+      <!-- Domains of Work -->
+      <h5 class="mb-3">Domains of Work</h5>
+      <div class="row g-3">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card domain-card text-center shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-diagram-3"></i>
+              <h5>Attack Modeling</h5>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card domain-card text-center shadow-sm">
-          <div class="card-body">
-            <i class="bi bi-shield-lock"></i>
-            <h5>Network Hardening</h5>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card domain-card text-center shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-shield-lock"></i>
+              <h5>Network Hardening</h5>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card domain-card text-center shadow-sm">
-          <div class="card-body">
-            <i class="bi bi-exclamation-triangle"></i>
-            <h5>Incident Response</h5>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card domain-card text-center shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-exclamation-triangle"></i>
+              <h5>Incident Response</h5>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card domain-card text-center shadow-sm">
-          <div class="card-body">
-            <i class="bi bi-broadcast"></i>
-            <h5>5G Security</h5>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card domain-card text-center shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-broadcast"></i>
+              <h5>5G Security</h5>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card domain-card text-center shadow-sm">
-          <div class="card-body">
-            <i class="bi bi-lightning-charge"></i>
-            <h5>Smart Grid Security</h5>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card domain-card text-center shadow-sm">
+            <div class="card-body">
+              <i class="bi bi-lightning-charge"></i>
+              <h5>Smart Grid Security</h5>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-  
-  <!-- Projects Section -->
-  <section id="projects" class="bg-light">
-    <div class="container">
-      <h2>Funded Projects</h2>
+
+    <!-- Projects Tab -->
+    <div class="tab-pane fade" id="projects-tab-pane" role="tabpanel">
       <div class="card shadow-sm mb-3">
         <div class="card-body">
           <h5 class="card-title">Design and Development of Next Generation Automated Security Operations and Response Tool (ASPER)</h5>
-          <br>
-          <p class="card-text">
-            <b>Funding Agency:</b> Ministry of Electronics & Information Technology, Government of India.
-          </p>
-          <p class="card-text">
-            <b>Industry Partner:</b> Tata Elxsi.
-          </p>
-          <p class="card-text">
-            <b>Status:</b> Ongoing.
-          </p>
-          <p class="card-text">
-            This project aims to build an advanced automated security operations and response tool to identify and mitigate vulnerabilities against sophisticated cyber threats.
-          </p>
-          
+          <p class="card-text"><b>Funding Agency:</b> Ministry of Electronics & Information Technology, Government of India.</p>
+          <p class="card-text"><b>Industry Partner:</b> Tata Elxsi.</p>
+          <p class="card-text"><b>Status:</b> Ongoing.</p>
+          <p class="card-text">This project aims to build an advanced automated security operations and response tool to identify and mitigate vulnerabilities against sophisticated cyber threats.</p>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Publications Section -->
-  <section id="publications">
-    <div class="container">
+
+<!-- Publications Tab -->
+    <div class="tab-pane fade" id="publications-tab-pane" role="tabpanel">
       <h2>Recent Publications</h2>
       <ul>
         <li>
@@ -273,17 +266,19 @@
       </ul>
       <p>For a complete list of publications, visit <a href="https://scholar.google.com/citations?user=fOSRHMUAAAAJ&hl=en" class="link" target="_blank">Google Scholar</a>.</p>
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="bg-light">
-    <div class="container">
+
+    
+  <!-- Contact Tab -->
+    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:preetam.mukherjee@duk.ac.in" class="link">preetam.mukherjee@duk.ac.in</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/dr-preetam-mukherjee/" class="link" target="_blank">linkedin.com/in/dr-preetam-mukherjee</a></p>
       <p>ORCID: <a href="https://orcid.org/0000-0003-2549-6578" class="link" target="_blank">0000-0003-2549-6578</a></p>
     </div>
-  </section>
+
+  </div>
+</div>
 
   <footer>
     <p>© 2025 Preetam Mukherjee </p>
