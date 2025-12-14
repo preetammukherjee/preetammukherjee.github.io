@@ -52,6 +52,19 @@
     a.link:hover {
       text-decoration: underline;
     }
+  /* Compact cards for Domains of Work */
+    .domain-card .card-body {
+      padding: 16px 10px;
+    }
+    .domain-card i {
+      font-size: 26px;
+      color: #003366;
+    }
+    .domain-card h5 {
+      font-size: 0.95rem;
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
   </style>
 </head>
 <body>
@@ -97,55 +110,57 @@
   </section>
 
   <section class="mt-5">
+  <div class="container">
     <h2 class="mb-4">Domains of Work</h2>
-  
-    <div class="row g-4">
-      <div class="col-md-4 col-sm-6">
-        <div class="card h-100 text-center shadow-sm">
+
+    <div class="row g-3">
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card domain-card text-center shadow-sm">
           <div class="card-body">
-            <i class="bi bi-diagram-3 fs-1 text-primary"></i>
-            <h5 class="card-title mt-3">Attack Modeling</h5>
+            <i class="bi bi-diagram-3"></i>
+            <h5>Attack Modeling</h5>
           </div>
         </div>
       </div>
-  
-      <div class="col-md-4 col-sm-6">
-        <div class="card h-100 text-center shadow-sm">
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card domain-card text-center shadow-sm">
           <div class="card-body">
-            <i class="bi bi-shield-lock fs-1 text-primary"></i>
-            <h5 class="card-title mt-3">Network Hardening</h5>
+            <i class="bi bi-shield-lock"></i>
+            <h5>Network Hardening</h5>
           </div>
         </div>
       </div>
-  
-      <div class="col-md-4 col-sm-6">
-        <div class="card h-100 text-center shadow-sm">
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card domain-card text-center shadow-sm">
           <div class="card-body">
-            <i class="bi bi-exclamation-triangle fs-1 text-primary"></i>
-            <h5 class="card-title mt-3">Incident Response</h5>
+            <i class="bi bi-exclamation-triangle"></i>
+            <h5>Incident Response</h5>
           </div>
         </div>
       </div>
-  
-      <div class="col-md-4 col-sm-6">
-        <div class="card h-100 text-center shadow-sm">
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card domain-card text-center shadow-sm">
           <div class="card-body">
-            <i class="bi bi-broadcast fs-1 text-primary"></i>
-            <h5 class="card-title mt-3">5G Security</h5>
+            <i class="bi bi-broadcast"></i>
+            <h5>5G Security</h5>
           </div>
         </div>
       </div>
-  
-      <div class="col-md-4 col-sm-6">
-        <div class="card h-100 text-center shadow-sm">
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card domain-card text-center shadow-sm">
           <div class="card-body">
-            <i class="bi bi-lightning-charge fs-1 text-primary"></i>
-            <h5 class="card-title mt-3">Smart Grid Security</h5>
+            <i class="bi bi-lightning-charge"></i>
+            <h5>Smart Grid Security</h5>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
   
   <!-- Projects Section -->
   <section id="projects" class="bg-light">
