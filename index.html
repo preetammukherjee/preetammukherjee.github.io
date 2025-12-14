@@ -68,9 +68,8 @@
   </style>
 </head>
 <body>
-
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">Dr. Preetam Mukherjee</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -78,190 +77,191 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#background">Background</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-target="background-tab-pane">Background</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-target="projects-tab-pane">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-target="publications-tab-pane">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-target="contact-tab-pane">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container mt-5">
-  <!-- Tabs nav -->
-  <ul class="nav nav-tabs" id="profileTabs" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="background-tab" data-bs-toggle="tab" data-bs-target="#background-tab-pane" type="button" role="tab">Background</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects-tab-pane" type="button" role="tab">Projects</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="publications-tab" data-bs-toggle="tab" data-bs-target="#publications-tab-pane" type="button" role="tab">Publications</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab">Contact</button>
-    </li>
-  </ul>
-
-  <!-- Tabs content -->
-  <div class="tab-content mt-4" id="profileTabsContent">
+  <div class="container mt-5 pt-5">
+    <!-- Tabs content -->
+    <div class="tab-content" id="profileTabsContent">
+      
+      <div class="tab-pane fade show active" id="background-tab-pane" role="tabpanel">
+        <h2>Background</h2>
+        <div class="tab-pane fade show active" id="background-tab-pane" role="tabpanel">
+          <div class="row align-items-center mb-4">
+            <div class="col-md-4 text-center text-md-start">
+              <img src="profile.jpg" alt="Dr. Preetam Mukherjee">
+            </div>
+            <div class="col-md-8 text-center text-md-start ps-md-1">
+              <h1 class="mb-2">Dr. Preetam Mukherjee</h1>
+              <h5 class="mb-1">Assistant Professor, School of Computer Science & Engineering</h5>
+              <h6 class="text-muted">Digital University Kerala</h6>
+            </div>
+          </div>
     
-    <!-- Background Tab -->
-    <div class="tab-pane fade show active" id="background-tab-pane" role="tabpanel">
-      <div class="row align-items-center mb-4">
-        <div class="col-md-4 text-center text-md-start">
-          <img src="profile.jpg" alt="Dr. Preetam Mukherjee">
+          <!-- Background text -->
+          <ul class="list-unstyled mb-4">
+            <li class="mb-2">Assistant Professor at Digital University Kerala (formerly IIITM-K, Trivandrum, India).</li>
+            <li class="mb-2">Post-Doctoral Researcher at KTH Royal Institute of Technology, Stockholm, Sweden.</li>
+            <li class="mb-2">Previously at IIT Kharagpur and Centre for Distributed Computing, Jadavpur University.</li>
+            <li class="mb-2">Ph.D. and M.Eng. from Jadavpur University, Kolkata, India.</li>
+            <li>Research interests: attack modeling, network hardening, incident response, 5G and Smart Grid Security.</li>
+          </ul>
+          <!-- Domains of Work -->
+                <h5 class="mb-3">Domains of Work</h5>
+                <div class="row g-3">
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card domain-card text-center shadow-sm">
+                      <div class="card-body">
+                        <i class="bi bi-diagram-3"></i>
+                        <h5>Attack Modeling</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card domain-card text-center shadow-sm">
+                      <div class="card-body">
+                        <i class="bi bi-shield-lock"></i>
+                        <h5>Network Hardening</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card domain-card text-center shadow-sm">
+                      <div class="card-body">
+                        <i class="bi bi-exclamation-triangle"></i>
+                        <h5>Incident Response</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card domain-card text-center shadow-sm">
+                      <div class="card-body">
+                        <i class="bi bi-broadcast"></i>
+                        <h5>5G Security</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card domain-card text-center shadow-sm">
+                      <div class="card-body">
+                        <i class="bi bi-lightning-charge"></i>
+                        <h5>Smart Grid Security</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
-        <div class="col-md-8 text-center text-md-start ps-md-1">
-          <h1 class="mb-2">Dr. Preetam Mukherjee</h1>
-          <h5 class="mb-1">Assistant Professor, School of Computer Science & Engineering</h5>
-          <h6 class="text-muted">Digital University Kerala</h6>
-        </div>
+
+      <div class="tab-pane fade" id="projects-tab-pane" role="tabpanel">
+        <h2>Projects</h2>
+          <div class="card shadow-sm mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Design and Development of Next Generation Automated Security Operations and Response Tool (ASPER)</h5>
+              <p class="card-text"><b>Funding Agency:</b> Ministry of Electronics & Information Technology, Government of India.</p>
+              <p class="card-text"><b>Industry Partner:</b> Tata Elxsi.</p>
+              <p class="card-text"><b>Status:</b> Ongoing.</p>
+              <p class="card-text">This project aims to build an advanced automated security operations and response tool to identify and mitigate vulnerabilities against sophisticated cyber threats.</p>
+            </div>
+          </div>
       </div>
 
-      <!-- Background text -->
-      <ul class="list-unstyled mb-4">
-        <li class="mb-2">Assistant Professor at Digital University Kerala (formerly IIITM-K, Trivandrum, India).</li>
-        <li class="mb-2">Post-Doctoral Researcher at KTH Royal Institute of Technology, Stockholm, Sweden.</li>
-        <li class="mb-2">Previously at IIT Kharagpur and Centre for Distributed Computing, Jadavpur University.</li>
-        <li class="mb-2">Ph.D. and M.Eng. from Jadavpur University, Kolkata, India.</li>
-        <li>Research interests: attack modeling, network hardening, incident response, 5G and Smart Grid Security.</li>
-      </ul>
-
-      <!-- Domains of Work -->
-      <h5 class="mb-3">Domains of Work</h5>
-      <div class="row g-3">
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="card domain-card text-center shadow-sm">
-            <div class="card-body">
-              <i class="bi bi-diagram-3"></i>
-              <h5>Attack Modeling</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="card domain-card text-center shadow-sm">
-            <div class="card-body">
-              <i class="bi bi-shield-lock"></i>
-              <h5>Network Hardening</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="card domain-card text-center shadow-sm">
-            <div class="card-body">
-              <i class="bi bi-exclamation-triangle"></i>
-              <h5>Incident Response</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="card domain-card text-center shadow-sm">
-            <div class="card-body">
-              <i class="bi bi-broadcast"></i>
-              <h5>5G Security</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="card domain-card text-center shadow-sm">
-            <div class="card-body">
-              <i class="bi bi-lightning-charge"></i>
-              <h5>Smart Grid Security</h5>
-            </div>
-          </div>
-        </div>
+      <div class="tab-pane fade" id="publications-tab-pane" role="tabpanel">
+        <h2>Publications</h2>
+          <ul>
+          <li>
+            Rani B.S., S., Mukherjee, P., & Ekstedt, M. (2025). 
+            “Modular Analysis of Attack Graphs for Smart Grid Security.” 
+            In <i>Proceedings of the 21st International Conference on Information Systems Security (<b>ICISS ’25</b>)</i>, Indore, India.
+            <a href="https://link.springer.com/chapter/10.1007/978-3-032-13714-2_29" class="link" target="_blank">[Link]</a>
+          </li>
+          <li>
+            Nair, L. R., Anil, A., Mukherjee, P., & Aggarwal, M. (2025). 
+            “Security-Centric NWDAF Module for Threat Detection and Mitigation in 5G Core Networks.” 
+            In <i>Proceedings of the 21st International Conference on Information Systems Security (<b>ICISS ’25</b>)</i>, Indore, India.
+            <a href="https://link.springer.com/chapter/10.1007/978-3-032-13714-2_23" class="link" target="_blank">[Link]</a>
+          </li>
+          <li>
+            Ghosh, A., Ditale, D., Albanese, M., & Mukherjee, P. (2025). 
+            “Optimizing IDS Rule Placement via Set Covering with Capacity Constraints.” 
+            <b>Computers & Security</b>, Volume 161.
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167404825004377" class="link" target="_blank">[Link]</a>
+          </li>
+          <li>
+            Thomas, B., Thampi, S. M., & Mukherjee, P. (2024). 
+            “Identifying Insecure Network Configurations Through Attack Modeling and Explainable AI.” 
+            In <i>Proceedings of the 20th International Conference on Information Systems Security (<b>ICISS ’24</b>)</i>, Jaipur, India.
+            <a href="https://link.springer.com/chapter/10.1007/978-3-031-80020-7_11" class="link" target="_blank">[Link]</a>
+          </li>
+          <li>
+            Ghosh, A., Albanese, M., Mukherjee, P., & Alipour-Fanid, A. (2024). 
+            “Improving the Efficiency of Intrusion Detection Systems by Optimizing Rule Deployment Across Multiple IDSs.” 
+            In <i>Proceedings of the 21st International Conference on Security and Cryptography (<b>Secrypt ’24</b>)</i>, Dijon, France.
+            <a href="https://www.scitepress.org/Papers/2024/128145/128145.pdf" class="link" target="_blank">[Link]</a>
+          </li>
+          <li>
+            Katsikeas, S., Buhaiu, A., Ekstedt, M., Afzal, Z., Hacks, S., & Mukherjee, P. (2024). 
+            “Development and validation of coreLang: A threat modeling language for the ICT domain.” 
+            <b>Computers & Security</b>, Volume 146.
+            <a href="https://www.sciencedirect.com/science/article/pii/S0167404824003626?via%3Dihub" class="link" target="_blank">[Link]</a>
+          </li>
+          <li>
+            Mukherjee, P., Thampi, S. M., Rohith, N., Poddar, B. K., & Sen, I. (2023). 
+            “Detection and Hardening Strategies to Secure an Enterprise Network.” 
+            In <i>Proceedings of the 19th International Conference on Information Systems Security (<b>ICISS ’23</b>)</i>, Raipur, India.
+            <a href="https://link.springer.com/chapter/10.1007/978-3-031-49099-6_6" class="link" target="_blank">[Link]</a>
+          </li>
+          <li>
+            Ekstedt, M., Afzal, Z., Mukherjee, P., Hacks, S., & Lagerström, R. (2023). 
+            “Yet another cybersecurity risk assessment framework.” 
+            <b>International Journal of Information Security</b>, Volume 22.
+            <a href="https://link.springer.com/article/10.1007/s10207-023-00713-y" class="link" target="_blank">[Link]</a>
+          </li>
+        </ul>
+        <p>For a complete list of publications, visit <a href="https://scholar.google.com/citations?user=fOSRHMUAAAAJ&hl=en" class="link" target="_blank">Google Scholar</a>.</p>
       </div>
-    </div>
 
-    <!-- Projects Tab -->
-    <div class="tab-pane fade" id="projects-tab-pane" role="tabpanel">
-      <div class="card shadow-sm mb-3">
-        <div class="card-body">
-          <h5 class="card-title">Design and Development of Next Generation Automated Security Operations and Response Tool (ASPER)</h5>
-          <p class="card-text"><b>Funding Agency:</b> Ministry of Electronics & Information Technology, Government of India.</p>
-          <p class="card-text"><b>Industry Partner:</b> Tata Elxsi.</p>
-          <p class="card-text"><b>Status:</b> Ongoing.</p>
-          <p class="card-text">This project aims to build an advanced automated security operations and response tool to identify and mitigate vulnerabilities against sophisticated cyber threats.</p>
-        </div>
+      <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel">
+        <h2>Contact</h2>
+          <p>Email: <a href="mailto:preetam.mukherjee@duk.ac.in" class="link">preetam.mukherjee@duk.ac.in</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/dr-preetam-mukherjee/" class="link" target="_blank">linkedin.com/in/dr-preetam-mukherjee</a></p>
+          <p>ORCID: <a href="https://orcid.org/0000-0003-2549-6578" class="link" target="_blank">0000-0003-2549-6578</a></p>
       </div>
+      
     </div>
-
-
-<!-- Publications Tab -->
-    <div class="tab-pane fade" id="publications-tab-pane" role="tabpanel">
-      <h2>Recent Publications</h2>
-      <ul>
-        <li>
-          Rani B.S., S., Mukherjee, P., & Ekstedt, M. (2025). 
-          “Modular Analysis of Attack Graphs for Smart Grid Security.” 
-          In <i>Proceedings of the 21st International Conference on Information Systems Security (<b>ICISS ’25</b>)</i>, Indore, India.
-          <a href="https://link.springer.com/chapter/10.1007/978-3-032-13714-2_29" class="link" target="_blank">[Link]</a>
-        </li>
-        <li>
-          Nair, L. R., Anil, A., Mukherjee, P., & Aggarwal, M. (2025). 
-          “Security-Centric NWDAF Module for Threat Detection and Mitigation in 5G Core Networks.” 
-          In <i>Proceedings of the 21st International Conference on Information Systems Security (<b>ICISS ’25</b>)</i>, Indore, India.
-          <a href="https://link.springer.com/chapter/10.1007/978-3-032-13714-2_23" class="link" target="_blank">[Link]</a>
-        </li>
-        <li>
-          Ghosh, A., Ditale, D., Albanese, M., & Mukherjee, P. (2025). 
-          “Optimizing IDS Rule Placement via Set Covering with Capacity Constraints.” 
-          <b>Computers & Security</b>, Volume 161.
-          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167404825004377" class="link" target="_blank">[Link]</a>
-        </li>
-        <li>
-          Thomas, B., Thampi, S. M., & Mukherjee, P. (2024). 
-          “Identifying Insecure Network Configurations Through Attack Modeling and Explainable AI.” 
-          In <i>Proceedings of the 20th International Conference on Information Systems Security (<b>ICISS ’24</b>)</i>, Jaipur, India.
-          <a href="https://link.springer.com/chapter/10.1007/978-3-031-80020-7_11" class="link" target="_blank">[Link]</a>
-        </li>
-        <li>
-          Ghosh, A., Albanese, M., Mukherjee, P., & Alipour-Fanid, A. (2024). 
-          “Improving the Efficiency of Intrusion Detection Systems by Optimizing Rule Deployment Across Multiple IDSs.” 
-          In <i>Proceedings of the 21st International Conference on Security and Cryptography (<b>Secrypt ’24</b>)</i>, Dijon, France.
-          <a href="https://www.scitepress.org/Papers/2024/128145/128145.pdf" class="link" target="_blank">[Link]</a>
-        </li>
-        <li>
-          Katsikeas, S., Buhaiu, A., Ekstedt, M., Afzal, Z., Hacks, S., & Mukherjee, P. (2024). 
-          “Development and validation of coreLang: A threat modeling language for the ICT domain.” 
-          <b>Computers & Security</b>, Volume 146.
-          <a href="https://www.sciencedirect.com/science/article/pii/S0167404824003626?via%3Dihub" class="link" target="_blank">[Link]</a>
-        </li>
-        <li>
-          Mukherjee, P., Thampi, S. M., Rohith, N., Poddar, B. K., & Sen, I. (2023). 
-          “Detection and Hardening Strategies to Secure an Enterprise Network.” 
-          In <i>Proceedings of the 19th International Conference on Information Systems Security (<b>ICISS ’23</b>)</i>, Raipur, India.
-          <a href="https://link.springer.com/chapter/10.1007/978-3-031-49099-6_6" class="link" target="_blank">[Link]</a>
-        </li>
-        <li>
-          Ekstedt, M., Afzal, Z., Mukherjee, P., Hacks, S., & Lagerström, R. (2023). 
-          “Yet another cybersecurity risk assessment framework.” 
-          <b>International Journal of Information Security</b>, Volume 22.
-          <a href="https://link.springer.com/article/10.1007/s10207-023-00713-y" class="link" target="_blank">[Link]</a>
-        </li>
-      </ul>
-      <p>For a complete list of publications, visit <a href="https://scholar.google.com/citations?user=fOSRHMUAAAAJ&hl=en" class="link" target="_blank">Google Scholar</a>.</p>
-    </div>
-
-
-    
-  <!-- Contact Tab -->
-    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:preetam.mukherjee@duk.ac.in" class="link">preetam.mukherjee@duk.ac.in</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/dr-preetam-mukherjee/" class="link" target="_blank">linkedin.com/in/dr-preetam-mukherjee</a></p>
-      <p>ORCID: <a href="https://orcid.org/0000-0003-2549-6578" class="link" target="_blank">0000-0003-2549-6578</a></p>
-    </div>
-
   </div>
-</div>
 
   <footer>
-    <p>© 2025 Preetam Mukherjee </p>
+      <p>© 2025 Preetam Mukherjee </p>
   </footer>
 
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // When navbar link is clicked, switch the corresponding tab
+    document.querySelectorAll('.navbar .nav-link').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = link.getAttribute('data-target');
+        const tabEl = document.getElementById(targetId);
+        const tab = new bootstrap.Tab(tabEl);
+        tab.show();
+      });
+    });
+  </script>
 </body>
 </html>
