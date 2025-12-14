@@ -13,6 +13,14 @@
     body {
       font-family: "Segoe UI", Roboto, sans-serif;
     }
+    html, body {
+      height: 100%;
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
+    }
     .navbar {
       background-color: #003366;
     }
@@ -97,6 +105,7 @@
 </nav>
 
 <!-- CONTENT -->
+<main class="flex-grow-1">
 <div class="container mt-5 pt-5">
 
   <div class="tab-content">
@@ -244,7 +253,9 @@
 
   </div>
 </div>
+</main>
 
+  
 <!-- FOOTER -->
 <footer>
   © 2025 Preetam Mukherjee
